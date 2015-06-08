@@ -11,4 +11,4 @@ to recreate my RSpec/Cucumber + Capybara setup purely in JavaScript!
 ## Using
 
 `npm install -g persistent_selenium`, then `persistent_selenium`. Point
-your Selenium client to `http://localhost:4443`. Test away!
+your Selenium client to `http://localhost:4443/wd/hub`. Test away!

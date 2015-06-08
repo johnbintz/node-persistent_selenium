@@ -1,6 +1,6 @@
 {
   "name": "persistent_selenium",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Keep your Selenium browser windows open while running tests in development.",
   "main": "index.js",
   "scripts": {
@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/johnbintz/node-persistent_selenium",
   "bin": {
-    "persistent_selenium": "./index.js"
+    "persistent_selenium": "./bin/persistent_selenium"
   },
   "repository": "johnbintz/node-persistent_selenium",
   "preferGlobal": true

@@ -74,8 +74,14 @@ app.use(proxy('localhost', {
   }
 }));
 
-selenium.start({ spawnOptions: {}}, function() {
-  console.log("Persistent selenium listening on port 4443");
-  app.listen(4443);
+selenium.install({ logger: function(msg) { console.log(msg); }}, function(err) {
+  selenium.start({ spawnOptions: {}}, function(err) {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log("Persistent selenium listening on port 4443");
+      app.listen(4443);
+    }
+  });
 });
 

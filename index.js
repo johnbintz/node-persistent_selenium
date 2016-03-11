@@ -74,8 +74,10 @@ app.use(proxy('localhost', {
   }
 }));
 
+var seleniumArgs = process.argv.slice(2);
+
 selenium.install({ logger: function(msg) { console.log(msg); }}, function(err) {
-  selenium.start({ spawnOptions: {}}, function(err) {
+  selenium.start({ spawnOptions: {}, seleniumArgs: seleniumArgs }, function(err) {
     if (err) {
       console.log(err);
     } else {

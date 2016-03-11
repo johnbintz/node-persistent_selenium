@@ -1,12 +1,15 @@
 {
   "name": "persistent_selenium",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "Keep your Selenium browser windows open while running tests in development.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["selenium", "persistent"],
+  "keywords": [
+    "selenium",
+    "persistent"
+  ],
   "author": "John Bintz <me@johnbintz.com> (http://johnbintz.com/)",
   "license": "ISC",
   "dependencies": {

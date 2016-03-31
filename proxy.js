@@ -35,6 +35,7 @@ app.use(proxy('localhost', {
   },
   decorateRequest: function(req) {
     req.port = app.config['selenium-port'] || 4444;
+    req.hostname = app.config['selenium-host'] || 'localhost';
 
     if (currentSession) {
       if (req.path === '/wd/hub/session/' + currentSession &&

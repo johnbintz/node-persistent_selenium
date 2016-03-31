@@ -1,5 +1,4 @@
 var selenium = require('selenium-standalone');
-var Request = require('request');
 var minimist = require('minimist');
 
 var arg = minimist(

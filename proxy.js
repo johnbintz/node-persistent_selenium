@@ -1,5 +1,6 @@
 var app = require('express')();
 var proxy = require('express-http-proxy');
+var Request = require('request');
 
 var currentSession = null;
 var currentSessionObj = null;

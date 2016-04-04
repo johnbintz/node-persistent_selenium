@@ -1,6 +1,6 @@
 {
   "name": "persistent_selenium",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Keep your Selenium browser windows open while running tests in development.",
   "main": "index.js",
   "scripts": {
